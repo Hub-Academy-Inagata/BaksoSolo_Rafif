@@ -1,0 +1,324 @@
+/* all */
+@font-face {
+    font-family: 'vg'; 
+    src: url('../font/Vastago_Grotesk/VastagoGrotesk-Regular.otf');
+}
+@font-face {
+    font-family: 'vg-bold'; 
+    src: url('../font/Vastago_Grotesk/VastagoGrotesk-Bold.otf');
+}
+@font-face {
+    font-family: 'vg-medium'; 
+    src: url('../font/Vastago_Grotesk/VastagoGrotesk-Medium.otf');
+}
+@font-face {
+    font-family: 'vg-thin'; 
+    src: url('../font/Vastago_Grotesk/VastagoGrotesk-Thin.otf');
+}
+@font-face {
+    font-family: 'vg-semibold'; 
+    src: url('../font/Vastago_Grotesk/VastagoGrotesk-SemiBold.otf');
+}   
+
+* {
+    font-family: 'vg' !important;
+}
+h1, h1 span, b {
+    font-family: 'vg-bold' !important;
+    font-weight: bold !important;
+}
+.fw-thin {
+    font-family: 'vg-thin' !important;
+}
+.fw-semibold {
+    font-family: 'vg-semibold' !important;
+}
+.fw-medium {
+    font-family: 'vg-medium' !important;
+}
+
+
+/* navbar */
+.btn-pesan {
+    padding: 12px 20px !important;
+}
+/* navbar end */
+
+/* hero */
+.title {
+    color: #111111 !important;
+    font-size: 80pt !important;
+}
+.sub-title {
+    color: #F06100 !important;
+}
+.bakso-hero {
+    background-color: #F06100 !important;
+    height: 473px !important;
+    margin-top: 16vh !important;
+}
+.bakso-hero-img {
+    bottom: 0 !important;
+}
+.btn-group-hero {
+    bottom: 13% !important;
+    right: 5% !important;
+}
+.btn-gofood {
+    background-color: white !important;
+    border: 1px solid black !important;
+}
+.btn-wa {
+    background-color: #25D366 !important;
+    border: 1px solid black !important;
+}
+@keyframes zoomOutLittle { 
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(0.95); }
+}
+.btn-gofood:hover , .btn-wa:hover {
+    animation-name: zoomOutLittle !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+.cita-rasa {
+    background-color: #FEBE33 !important;
+    height: 100% !important;
+}
+.cita-rasa h1 {
+    font-size: 50px !important;
+    line-height: 66px !important;
+}
+.hero-1965 {
+    top: 6% !important;
+    right: 5% !important;
+    animation: bounce 1.5s ease-in-out infinite alternate-reverse both !important;
+}
+@keyframes bounce { 
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
+}
+.cita-rasa-black {
+    background-color: #111111 !important;
+    height: 100% !important;
+}
+/* hero end*/
+
+/* didirikan */
+.didirikan-container {
+    background-color: #111111 !important;
+    margin: 8vh 0 !important;
+}
+.didirikan-right{
+    width: 55%;
+}
+.didirikan-left{
+    width: 45%;
+}
+.container-didirikan-text {
+    bottom: 10% !important;
+    left: 15% !important;
+    width: 75% !important;
+}
+.didirikan-text {
+    line-height: 43.2px !important;
+}
+/* didirikan end */
+
+/* makan */
+.makan-container {
+    margin-top: 15vh !important;
+    margin-bottom: 15vh !important;
+}
+.makan1 {
+    top: 0 !important;
+    right: 0 !important;
+    width: 45% !important;
+}
+.makan-title {
+    font-size: 55px !important;
+}
+.menoe-btn {
+    background-color: #111111 !important;
+}
+.menoe-btn:hover {
+    animation-name: zoomOutLittle !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+.makan3-container-left {
+    width: 42% !important;
+}
+.makan3-container-right {
+    width: 58% !important;
+}
+.makan3 {
+    width: 48% !important;
+}
+.makan3-text {
+    width: 53% !important;
+}
+.makan3-sub {
+    line-height: 33.6px !important;
+}
+/* makan-end */
+
+
+/* cabang */
+.cabang-container {
+    background-color: #FEBE33 !important;
+}
+
+.cabang-card {
+    background-color: white !important;
+}
+@keyframes rotate-zoom { 
+    0% { transform: rotate(0deg) scale(1.0)  translateY(0px); }
+  100% { transform: rotate(-3deg) scale(1.05) translateY(30px) translateX(-20px); }
+}
+.cabang-card:hover {
+    animation-name: rotate-zoom !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
+}
+.cabang-card:hover .btn-lokasi {
+    display: block !important;
+}
+@keyframes geserKanan { 
+    0% { transform: translateX(0px); }
+  100% { transform: translateX(30px); }
+}
+#c2:hover ~ #c3,#c2:hover {
+    animation-name: geserKanan !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#c3:hover {
+    animation-name: geserKanan !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.btn-lokasi {
+    background-color: #F06100 !important;
+    bottom: 10px !important;
+    left: 10px !important;
+    display: none !important;
+}
+.btn-lokasi:hover {
+    transform: scale(0.9) !important;
+}
+/* cabang end */
+
+/* galeri */
+.galeri-container {
+    background-color: #111111 !important;
+}
+@keyframes zoomOut { 
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.2); }
+}
+#video-btn {
+    top: 50% !important;
+    bottom: 50% !important;
+    left: 50% !important;
+    right: 50% !important;
+    z-index: 1 !important;
+}
+#video-btn:hover {
+    animation-name: zoomOut !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+@keyframes blur { 
+    100% {	filter: blur(4px) };
+}
+#video-btn:hover + #video-img {
+    animation-name: blur !important;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.btn-close {
+    top: -6% !important;
+    right: 0 !important;
+    background-color: #FF6913 !important;
+    z-index: 1 !important;
+}
+/* galeri end */
+
+/* review */ 
+.review-container {
+    border-bottom: 2px solid #E8E8E8 !important;
+}
+.review-card{
+    height: 500px !important;
+    max-width: auto !important;
+}
+.review-text {
+    font-size: 49px !important;
+    line-height: 64px !important;
+}
+.profile-container {
+    bottom: 0 !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 50px !important;
+    top: auto !important;
+    left: auto !important;
+    border: 2px solid #111111 !important;
+    padding: 8px !important;
+    border-radius: 50% !important;
+}
+.carousel-control-prev {
+    bottom: 0px !important;
+    right: 60px !important;
+}
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    border: 2px solid #F06100 !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+/* review end */
+
+/* hidangan */
+.hidangan-container {
+    background-color: #F06100 !important;
+    background-image: url('../img/index/hidangan-img.png');
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
+}
+.hidangan-text {
+    font-size: 80px !important;
+}
+/* hidangan end */
+
+/* footer */
+.footer-sub {
+    color: #F06100 !important;
+}
+.aa {
+    border: 3px solid white !important;
+}
