@@ -48,6 +48,7 @@ h1, h1 span, b {
 .title {
     color: #111111 !important;
     font-size: 80pt !important;
+    z-index: -1 !important;
 }
 .sub-title {
     color: #F06100 !important;
@@ -56,6 +57,7 @@ h1, h1 span, b {
     background-color: #F06100 !important;
     height: 473px !important;
     margin-top: 16vh !important;
+    z-index: -2 !important;
 }
 .bakso-hero-img {
     bottom: 0 !important;
@@ -171,7 +173,6 @@ h1, h1 span, b {
 }
 /* makan-end */
 
-
 /* cabang */
 .cabang-container {
     background-color: #FEBE33 !important;
@@ -231,15 +232,14 @@ h1, h1 span, b {
     background-color: #111111 !important;
 }
 @keyframes zoomOut { 
-    0% { transform: scale(1); }
-    50% { transform: scale(1.5); }
-    100% { transform: scale(1.2); }
+    0% { transform: scale(1) translate(-52%, -52%); }
+    50% { transform: scale(1.5) translate(-40%, -40%); }
+    100% { transform: scale(1.2) translate(-40%, -40%); }
 }
 #video-btn {
-    top: 50% !important;
-    bottom: 50% !important;
-    left: 50% !important;
-    right: 50% !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1 !important;
 }
 #video-btn:hover {
@@ -321,4 +321,155 @@ h1, h1 span, b {
 }
 .aa {
     border: 3px solid white !important;
+}
+/* footer end */
+
+/* RESPONSIVE */
+
+/* ========= Tablet ==========*/
+
+@media screen and (max-width: 991.98px) {
+    /* navbar */
+    .navbar-nav {
+        margin-top: 20px !important;
+    }
+    .btn-pesan {
+        float: right !important;
+    }
+    /* navbar end */
+
+    /* hero */
+    .title {
+        font-size: 58pt !important;
+    }
+    .bakso-hero {
+        height: 300px !important;
+        margin-top: 5vh !important;
+    }
+    .cita-rasa h1 {
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }
+    .cita-rasa-black {
+        display: none !important;
+    }
+    /* hero end */
+
+    /* didirikan */
+    .didirikan-container {
+        margin: 5vh 0 !important;
+    }
+    .didirikan-right, .didirikan-left {
+        width: auto;
+    }
+    .container-didirikan-text {
+        position: relative !important;
+    }
+    .didirikan-img-big {
+        display: none !important;
+    }
+    .didirikan-img-small {
+        display: block !important;
+    }
+    .container-didirikan-text {
+        left: 10% !important;
+    }
+    .didirikan-text {
+        line-height: 43.2px !important;
+    }
+    /* didirikan end */
+
+    /* makan */
+    .makan-container {
+        margin-top: 8vh !important;
+        margin-bottom: 8vh !important;
+    }
+    .makan-title {
+        font-size: 36px !important;
+    }
+    .makan2-container {
+        width: 100% !important;
+        margin: 70px 0 !important;
+    }
+    .makan3-container-left, .makan3-container-right {
+        width: auto !important;
+    }
+    .makan3-container-right {
+        margin-bottom: 50px !important;
+    }
+    .makan3-container {
+        flex-wrap: wrap-reverse !important;
+    }
+    .makan3 {
+        order: 2 !important;
+    }
+    /* makan-end */
+
+    /* cabang */
+    .cabang-inner-container {
+        margin-top: 0 !important;
+    }
+    .cabang-title {
+        width: 75% !important;
+    }
+    #c3 {
+        margin-top: 30px !important;
+    }
+    #c1:hover ~ #c3 {
+        transform: translateY(40px) !important;
+    }
+    #c2:hover ~ #c3 {
+        transform: translateY(40px) !important;
+        animation-name: none !important;
+    }
+    /* cabang end */
+
+    /* galeri */
+    #video-btn:hover {
+        animation-name: zoomOut !important;
+        animation-duration: 500ms;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+    }
+    /* galeri end */
+
+    /* review */ 
+    .review-text {
+        font-size: 38px !important;
+        line-height: 48px !important;
+    }
+    /* review end */
+
+    /* divider */
+    .divider-container {
+        display: none !important;
+    }
+    /* divider end */
+
+    /* hidangan */
+    .hidangan-title {
+        margin-bottom: 30px !important;
+        margin-top: 30px !important;
+        font-size: 24px !important;
+    }
+    .hidangan-text {
+        font-size: 50px !important;
+        padding: 0 20px !important;
+    }
+    .hidangan-btn-container {
+        margin-bottom: 20px !important;
+    }
+    /* hidangan end */
+
+    /* footer */
+    .footer-sub {
+        color: #F06100 !important;
+    }
+    .aa {
+        border: 3px solid white !important;
+    }
+    /* footer end */
+
 }
