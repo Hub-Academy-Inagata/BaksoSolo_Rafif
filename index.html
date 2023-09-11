@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container py-3">
             <a class="navbar-brand me-5" href="#">
-                <img src="asset/img/index/logo-black.svg" alt="">
+                <img src="asset/img/index/logo-black.svg" alt="" class="nav-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,37 +46,39 @@
                         <a class="nav-link" href="#galeri">Galeri</a>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-dark btn-pesan rounded-3" type="submit">PESAN SEKARANG</a>
+                <a href="https://gofood.link/u/bwl3PM" target="_blank" class="btn btn-dark btn-pesan rounded-3"
+                    type="submit">PESAN SEKARANG</a>
             </div>
         </div>
     </nav>
     <!-- navbar end -->
 
     <!-- hero -->
-    <div class="container">
-        <h1 class="title w-100 text-center fw-bold mb-5">
-            <span class="sub-title">
-                Legendary
-            </span> flavors <br> from every bite
-        </h1>
-        <div class="bakso-hero position-relative rounded-5 mb-4">
-            <img src="asset/img/index/bakso-hero.png" alt="" class="position-absolute w-100 bakso-hero-img">
-            <div class="position-absolute btn-group-hero">
-                <a href="https://gofood.link/u/bwl3PM" target="_blank"
-                    class="d-flex btn-gofood rounded-4 align-items-center py-2 px-4 mb-3 text-black text-decoration-none  justify-content-center">
-                    <div class="me-2 fw-bold fs-5">PESAN SEKARANG</div>
-                    <img src="asset/img/index/icon-gofood.svg" alt="" width="50px">
-                </a>
-                <a href="https://wa.me/6281292272007?text=Halo%20Bakso%20Solo%20Kidul%20Pasar%0ABisakah%20saya%20dibantu%3F"
-                    target="_blank"
-                    class=" d-flex btn-wa rounded-4 py-3 px-4 align-items-center text-black text-decoration-none justify-content-center">
-                    <img src="asset/img/index/icon-wa.svg" alt="" width="35px">
-                    <div class="fw-semibold fs-4 ms-2">WhatsApp</div>
-                </a>
+    <div class="container hero-container">
+        <div class="container-fluid m-0 p-0 position-relative">
+            <h1 class="title w-100 text-center fw-bold mb-5 position-relative">
+                <span class="sub-title">
+                    Legendary
+                </span> flavors <br> from every bite
+            </h1>
+            <div class="bakso-hero position-relative rounded-5 mb-4">
+                <img src="asset/img/index/bakso-hero.png" alt="" class="position-absolute w-100 bakso-hero-img">
+                <div class="position-absolute btn-group-hero">
+                    <a href="https://gofood.link/u/bwl3PM" target="_blank"
+                        class="d-flex btn-gofood rounded-4 align-items-center py-2 px-4 mb-3 text-black text-decoration-none  justify-content-center">
+                        <div class="me-2 fw-bold fs-5">PESAN SEKARANG</div>
+                        <img src="asset/img/index/icon-gofood.svg" alt="" width="50px">
+                    </a>
+                    <a href="https://wa.link/tmrwvx" target="_blank"
+                        class=" d-flex btn-wa rounded-4 py-3 px-4 align-items-center text-black text-decoration-none justify-content-center">
+                        <img src="asset/img/index/icon-wa.svg" alt="" width="35px">
+                        <div class="fw-semibold fs-4 ms-2">WhatsApp</div>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row mb-5">
-            <div class="col col-lg-8 col-sm-12">
+            <div class="col col-lg-8 col-sm-12 col-12">
                 <div class="cita-rasa rounded-4 p-5 position-relative">
                     <h1 class="fw-bold">
                         CITA RASA ASLI <br> MALANGAN JANG <br> MELEGENDA SEDJAK
@@ -98,7 +100,7 @@
         <div class="d-flex justify-content-between flex-wrap-reverse">
             <div class="didirikan-left position-relative">
                 <div class="container-didirikan-text position-absolute">
-                    <img src="asset/img/index/loho-white.svg" alt="" class="mb-5" data-aos="zoom-in"
+                    <img src="asset/img/index/loho-white.svg" alt="" class="mb-5 didirikan-img" data-aos="zoom-in"
                         data-aos-duration="1500" data-aos-delay="0">
                     <p class="fs-2 text-white fw-thin didirikan-text" data-aos="zoom-in" data-aos-duration="1500"
                         data-aos-delay="100">
@@ -116,10 +118,10 @@
     <!-- didirikan end -->
 
     <!-- makan -->
-    <div class="container makan-container position-relative" id="menu">
+    <div class="container makan-container position-relative overflow-hidden" id="menu">
         <img src="asset/img/index/makan-img1.png" alt="" class="makan1 position-absolute img-fluid rounded-4"
             data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <div class="w-50 mb-5">
+        <div class="makan-text-container w-50 mb-5">
             <h1 class="makan-title mb-3">
                 Makan dan nikmati di waroeng kami
             </h1>
@@ -130,7 +132,7 @@
         <div class="makan2-container d-flex pt-4 justify-content-between w-50">
             <img src="asset/img/index/makan-img2.png" alt="" class="makan2" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="200">
-            <span>
+            <span class="menoe-btn-container">
                 <a href="" class="btn fs-4 menoe-btn text-white align-content-start py-4 px-5 rounded-4">
                     Lihat Menoe
                 </a>
@@ -138,8 +140,8 @@
         </div>
         <div class="d-flex w-100 makan3-container">
             <div class="d-flex align-items-center align-self-end makan3-container-left">
-                <img src="asset/img/index/icon-acivement.svg" alt="" class="me-4">
-                <p class="fs-4">
+                <img src="asset/img/index/icon-acivement.svg" alt="" class="me-4 accivement-img">
+                <p class="fs-4 accivement-text">
                     <b>Djaminan koeah bakso</b> jang <br> nendang mengoegah selera!
                 </p>
             </div>
@@ -149,7 +151,7 @@
                         data-aos-duration="1000" data-aos-delay="300">
                 </div>
                 <div class="ps-4 makan3-text align-self-end">
-                    <p class="fs-2 fw-semibold">
+                    <p class="fs-2 makan3-title fw-semibold">
                         Koealitas nomer 01
                     </p>
                     <p class="fs-4 makan3-sub">
@@ -168,8 +170,8 @@
             <h1 class="cabang-title w-50 mb-5 fw-semibold">
                 Kami dekat, menjadi pilihan kuliner anda & keluarga
             </h1>
-            <div class="row row-cols-lg-3 row-cols-sm-2 justify-content-center position-relative" data-aos="fade-left"
-                data-aos-duration="1500" data-aos-delay="200">
+            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 justify-content-center position-relative"
+                data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">
                 <div class="col" id="c1">
                     <div class="cabang-card p-4 rounded-4">
                         <div class="position-relative mb-4">
@@ -182,10 +184,10 @@
                             </a>
                         </div>
                         <div class="container-fluid">
-                            <p class="fw-semibold fs-4">
+                            <p class="fw-semibold fs-4 cabang-card-title">
                                 Jl. A. Yani No.57
                             </p>
-                            <p class="fs-6">
+                            <p class="fs-6 cabang-card-sub">
                                 Purwodadi, Kec. Blimbing, Kota Malang, Jawa Timur 65126
                             </p>
                         </div>
@@ -203,10 +205,10 @@
                             </a>
                         </div>
                         <div class="container-fluid">
-                            <p class="fw-semibold fs-4">
+                            <p class="fw-semibold fs-4 cabang-card-title">
                                 Jl. Halmahera No. 12A
                             </p>
-                            <p class="fs-6">
+                            <p class="fs-6 cabang-card-sub">
                                 Kasin, Kec. Klojen, Kota Malang, Jawa Timur 65117
                             </p>
                         </div>
@@ -224,10 +226,10 @@
                             </a>
                         </div>
                         <div class="container-fluid">
-                            <p class="fw-semibold fs-4">
+                            <p class="fw-semibold fs-4 cabang-card-title">
                                 Jl. Sartono S.H No. 52
                             </p>
-                            <p class="fs-6">
+                            <p class="fs-6 cabang-card-sub">
                                 Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65148
                             </p>
                         </div>
@@ -247,9 +249,9 @@
                     data-src="https://www.youtube.com/embed/k_nW1_4daag?si=oMlTY4pNjqLPWRDI">
                 <img src="asset/img/index/video-img.png" alt="" class="w-100" id="video-img">
             </div>
-            <div class="row row-cols-2 gx-5">
+            <div class="row row-cols-1 row-cols-sm-2 gx-5">
                 <div class="col">
-                    <p class="fs-2 text-white mb-5">
+                    <p class="fs-2 text-white mb-5 galeri-title">
                         Potret tjerita rasa masa laloe jang tak pernah lekang oleh waktoe
                     </p>
                     <img src="asset/img/index/galeri1.png" alt="" class="w-100 mb-5" data-aos="zoom-in"
@@ -289,7 +291,7 @@
 
     <!-- review -->
     <div class="container review-container  py-5 my-5">
-        <div class="mb-5">
+        <div class="mb-5 review-text-container">
             <p class="fs-6 mb-2">
                 Google Review
             </p>
@@ -309,8 +311,8 @@
                             nyamain.. harganya wajar lah ya, secara rasanya istimewah..
                         </p>
                         <div class="d-flex align-items-center position-absolute profile-container">
-                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid">
-                            <p class="fw-medium mt-3 ms-3 fs-5">
+                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid profile-img">
+                            <p class="fw-medium mt-3 ms-3 fs-5 profile-name">
                                 Winda Hettyningtyas
                             </p>
                         </div>
@@ -326,8 +328,8 @@
                             nyamain.. harganya wajar lah ya, secara rasanya istimewah..
                         </p>
                         <div class="d-flex align-items-center position-absolute profile-container">
-                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid">
-                            <p class="fw-medium mt-3 ms-3 fs-5">
+                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid profile-img">
+                            <p class="fw-medium mt-3 ms-3 fs-5 profile-name">
                                 Winda Hettyningtyas
                             </p>
                         </div>
@@ -343,8 +345,8 @@
                             nyamain.. harganya wajar lah ya, secara rasanya istimewah..
                         </p>
                         <div class="d-flex align-items-center position-absolute profile-container">
-                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid">
-                            <p class="fw-medium mt-3 ms-3 fs-5">
+                            <img src="asset/img/index/profile1.png" alt="" class="img-fluid profile-img">
+                            <p class="fw-medium mt-3 ms-3 fs-5 profile-name">
                                 Winda Hettyningtyas
                             </p>
                         </div>
@@ -375,12 +377,12 @@
             </h1>
             <div class="d-flex justify-content-center mb-5 hidangan-btn-container">
                 <a href="https://gofood.link/u/bwl3PM" target="_blank"
-                    class="d-flex btn-gofood rounded-4 align-items-center py-2 ps-4 pe-2 me-4  text-black text-decoration-none">
+                    class="d-flex btn-gofood rounded-4 align-items-center py-2 ps-4 pe-2 me-4  text-black text-decoration-none"
+                    id="btn-gofood">
                     <div class="me-2 fw-bold fs-5">PESAN SEKARANG</div>
                     <img src="asset/img/index/icon-gofood.svg" alt="" width="50px">
                 </a>
-                <a href="https://wa.me/6281292272007?text=Halo%20Bakso%20Solo%20Kidul%20Pasar%0ABisakah%20saya%20dibantu%3F"
-                    target="_blank"
+                <a href="https://wa.link/tmrwvx" target="_blank"
                     class="btn-wa rounded-4 py-2 px-4 d-flex align-items-center text-black text-decoration-none">
                     <img src="asset/img/index/icon-wa.svg" alt="" width="35px">
                     <div class="fw-semibold fs-4 ms-2">WhatsApp</div>
@@ -392,9 +394,9 @@
 
     <!-- footer -->
     <div class="container-fluid bg-dark">
-        <div class="d-flex container justify-content-between align-content-center py-5">
-            <img src="asset/img/index/loho-white.svg" alt="" class="img-fluid" width="120px">
-            <p class="text-white fw-thin m-0 align-self-center">
+        <div class="d-flex footer-container container justify-content-between align-content-center py-5">
+            <img src="asset/img/index/loho-white.svg" alt="" class="img-fluid footer-logo" width="120px">
+            <p class="text-white fw-thin m-0 align-self-center footer-text">
                 &copy;1965 <span class="footer-sub fw-thin">Bakso Solo Kidul Pasar</span> | All Right Reserved
             </p>
             <div class="social-logo d-inline-flex gap-3 align-self-center">
@@ -404,8 +406,7 @@
                 <a href="https://instagram.com/baksosolo_kidulpasar?igshid=NzZhOTFlYzFmZQ==" class="" target="_blank">
                     <img src="asset/img/index/Instagram.png" alt="" class="">
                 </a>
-                <a href="https://wa.me/6281292272007?text=Halo%20Bakso%20Solo%20Kidul%20Pasar%0ABisakah%20saya%20dibantu%3F"
-                    class="" target="_blank">
+                <a href="https://wa.link/tmrwvx" class="" target="_blank">
                     <img src="asset/img/index/WhatsApp.png" alt="" class="">
                 </a>
             </div>

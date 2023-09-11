@@ -36,6 +36,11 @@ h1, h1 span, b {
 .fw-medium {
     font-family: 'vg-medium' !important;
 }
+@keyframes triggerClick { 
+    0% { transform: scale(0.98); }
+    50% { transform: scale(1.025); }
+    100% { transform: scale(0.98); }
+}
 
 
 /* navbar */
@@ -48,7 +53,7 @@ h1, h1 span, b {
 .title {
     color: #111111 !important;
     font-size: 80pt !important;
-    z-index: -1 !important;
+    z-index: 9999 !important;
 }
 .sub-title {
     color: #F06100 !important;
@@ -57,7 +62,7 @@ h1, h1 span, b {
     background-color: #F06100 !important;
     height: 473px !important;
     margin-top: 16vh !important;
-    z-index: -2 !important;
+    z-index: 0 !important;
 }
 .bakso-hero-img {
     bottom: 0 !important;
@@ -80,11 +85,7 @@ h1, h1 span, b {
     100% { transform: scale(0.95); }
 }
 .btn-gofood:hover , .btn-wa:hover {
-    animation-name: zoomOutLittle !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: zoomOutLittle 500ms ease 1 forwards !important;
     cursor: pointer;
 }
 .cita-rasa {
@@ -147,13 +148,11 @@ h1, h1 span, b {
 }
 .menoe-btn {
     background-color: #111111 !important;
+    animation: triggerClick 1.5s ease-in-out infinite alternate-reverse both !important;
 }
 .menoe-btn:hover {
-    animation-name: zoomOutLittle !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-name: none !important;
+    animation: zoomOutLittle 500ms ease 1 forwards !important;
     cursor: pointer;
 }
 .makan3-container-left {
@@ -186,11 +185,7 @@ h1, h1 span, b {
   100% { transform: rotate(-3deg) scale(1.05) translateY(30px) translateX(-20px); }
 }
 .cabang-card:hover {
-    animation-name: rotate-zoom !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: rotate-zoom 500ms ease 1 forwards !important;
     -webkit-box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
     -moz-box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
     box-shadow: 10px 10px 65px 7px rgba(0,0,0,0.25);
@@ -203,18 +198,10 @@ h1, h1 span, b {
   100% { transform: translateX(30px); }
 }
 #c2:hover ~ #c3,#c2:hover {
-    animation-name: geserKanan !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: geserKanan 500ms ease 1 forwards !important;
 }
 #c3:hover {
-    animation-name: geserKanan !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: geserKanan 500ms ease 1 forwards !important;
 }
 .btn-lokasi {
     background-color: #F06100 !important;
@@ -243,22 +230,14 @@ h1, h1 span, b {
     z-index: 1 !important;
 }
 #video-btn:hover {
-    animation-name: zoomOut !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: zoomOut 500ms ease 1 forwards !important;
     cursor: pointer;
 }
 @keyframes blur { 
     100% {	filter: blur(4px) };
 }
 #video-btn:hover + #video-img {
-    animation-name: blur !important;
-    animation-duration: 500ms;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: blur 500ms ease 1 forwards !important;
 }
 .btn-close {
     top: -6% !important;
@@ -426,11 +405,7 @@ h1, h1 span, b {
 
     /* galeri */
     #video-btn:hover {
-        animation-name: zoomOut !important;
-        animation-duration: 500ms;
-        animation-timing-function: ease;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        animation: zoomOut 500ms ease 1 forwards !important;
         cursor: pointer;
     }
     /* galeri end */
@@ -462,14 +437,268 @@ h1, h1 span, b {
         margin-bottom: 20px !important;
     }
     /* hidangan end */
+}
+
+/* ========= tablet end ===== */
+
+
+/* ========= Mobile ========= */
+@media screen and (max-width: 500px) {
+    /* navbar */
+    .nav-logo {
+        width: 60% !important;
+    }
+    .nav-item {
+        padding-left: 20px !important;
+    }
+    .btn-pesan {
+        font-size: 12px !important;
+    }
+    /* navbar end */
+
+    /* hero */
+    .hero-container {
+        margin-bottom: 10vh !important;
+        margin-top: 5vh !important;
+    }
+    .title {
+        font-size: 28pt !important;
+        margin-top: 3vh !important;
+        margin-bottom: 12vh !important;
+    }
+    .bakso-hero {
+        height: 150px !important;
+        margin-top: 0vh !important;
+        margin-bottom: 1vh !important;
+        border-radius: 15px !important;
+    }
+    .btn-group-hero {
+        bottom: 8% !important;
+        right: 3% !important;
+    }
+    .btn-gofood {
+        margin-bottom: 5px !important;
+    }
+    .btn-gofood, .btn-wa {
+        padding: 5px 8px !important;
+        border-radius: 8px !important;
+    }
+    .btn-gofood div , .btn-wa div{
+        font-size: 8pt !important;
+    }
+    .btn-gofood img , .btn-wa img{
+        width: 25px !important;
+    }
+    .cita-rasa {
+        width: 100% !important;
+        padding: 18px 30px !important;
+    }
+    .cita-rasa h1 {
+        font-size: 18px !important;
+        line-height: 25px !important;
+        margin: 0 !important;
+    }
+    .hero-1965 {
+        width: 22% !important;
+    }
+    /* hero end */
+
+    /* didirikan */
+    .didirikan-img {
+        width: 40% !important;
+        margin-bottom: 3vh !important;
+    }
+    .didirikan-text {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+    /* didirikan end */
+
+    /* makan */
+    .makan1 {
+        display: none !important;
+    }
+    .makan-text-container {
+        width: 85% !important;
+        margin: auto !important;
+        margin-bottom: 0vh !important;
+    }
+    .makan-title {
+        font-size: 28px !important;
+    }
+    .makan-sub {
+        font-size: 18px !important;
+    }
+    .makan2-container {
+        padding-top: 0 !important;
+        margin: 40px 0 !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .menoe-btn-container {
+        width: 75% !important;
+    }
+    .menoe-btn {
+        margin-top: 10px !important;
+        font-size: 16px !important;
+        padding: 15px 30px !important;
+        width: 100% !important;
+    }
+    .makan3-container-right {
+        flex-wrap: wrap-reverse !important;
+        width: 80% !important;
+        margin: auto !important;
+        margin-bottom: 20px !important;
+    }
+    .makan3 {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .makan3-text {
+        width: 100% !important;
+        padding: 0 !important;
+        padding-left: 10px !important;
+    }
+    .makan3-title {
+        font-size: 24px !important;
+        margin-bottom: 8px !important;
+    }
+    .makan3-sub {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+    .makan3-container-left {
+        width: 80% !important;
+        margin: auto !important;
+    }
+    .accivement-img {
+        width: 50px !important;
+        margin-right: 15px !important; 
+    }
+    .accivement-text {
+        font-size: 16px !important;
+        margin: 0 !important;
+    }
+    /* makan-end */
+
+    /* cabang */
+    .cabang-container {
+        padding: 0 !important;
+    }
+    .cabang-container{
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+        padding-bottom: 5vh !important;
+    }
+    .cabang-card {
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .cabang-title {
+        width: 85% !important;
+        font-size: 20px !important;
+        margin: auto !important;
+        margin-bottom: 30px !important;
+    }
+    .cabang-card-title {
+        font-size: 18px !important;
+        margin-bottom: 5px !important;
+    }
+    .cabang-card-sub {
+        font-size: 14px !important;
+        margin-bottom: 0 !important;
+    }
+    #c2 {
+        margin-top: 30px !important;
+    }
+    #c1:hover ~ #c3, #c1:hover ~ #c2 {
+        transform: translateY(40px) !important;
+    }
+    /* cabang end */
+
+    /* galeri */
+    #video-btn {
+        width: 50px !important;
+    }
+    .galeri-title {
+        font-size: 20px !important;
+    }
+    /* galeri end */
+
+    /* review */ 
+    .review-container {
+        padding-top: 0px !important;
+        padding-bottom: 30px !important;
+    }
+    .review-text-container {
+        margin-bottom: 30px !important;
+    }
+    .review-card{
+        height: 250px !important;
+    }
+    .review-text {
+        font-size: 18px !important;
+        line-height: 25px !important;
+    }
+    .profile-img {
+        width: 50px !important;
+    }
+    .profile-name {
+        font-size: 14px !important;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px !important;
+        padding: 5px !important;
+        bottom: 10px !important;
+    }
+    .carousel-control-prev {
+        right: 40px !important;
+    }
+    /* review end */
+
+    /* hidangan */
+    .hidangan-container {
+        border-radius: 0 !important;
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+    .hidangan-title {
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+        font-size: 20px !important;
+    }
+    .hidangan-text {
+        font-size: 28px !important;
+        padding: 0px !important;
+        margin-bottom: 20px !important;
+    }
+    .hidangan-btn-container {
+        margin-bottom: 0px !important;
+    }
+    #btn-gofood {
+        margin-bottom: 0px !important;
+    }
+    /* hidangan end */
 
     /* footer */
-    .footer-sub {
-        color: #F06100 !important;
+    .footer-container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
     }
-    .aa {
-        border: 3px solid white !important;
+    .footer-logo {
+        width: 40px !important;
     }
-    /* footer end */
+    .footer-text {
+        font-size: 9px !important;
+    }
+    .social-logo {
+        gap: 5px !important;
+    }
+    .social-logo img {
+        width: 20px !important;
+    }
+
+/* ========= Mobile end ========= */
+
 
 }
