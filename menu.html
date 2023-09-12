@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menoe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="asset/css/menu.css">
+
+    <!-- tab icon -->
+    <link rel="icon" href="asset/img/index/logo-bakso.png">
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-3">
+            <a class="navbar-brand me-5" href="#">
+                <img src="asset/img/index/logo-black.svg" alt="" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#warung">Warung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                </ul>
+                <a href="https://gofood.link/u/bwl3PM" target="_blank" class="btn btn-dark btn-pesan rounded-3"
+                    type="submit">PESAN SEKARANG</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- temoekan -->
+    <div class="container my-5 py-4">
+        <h1 class="temoekan-title fw-semibold mb-5">
+            Temoekan yang Kamu idamkan!
+        </h1>
+        <div class="filter-grup-container position-relative">
+
+            <div class="position-absolute arrow-container">
+                <img src="asset/img/index/arrow-left.svg" alt="" class="carousel-control-prev position-absolute"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <img src="asset/img/index/arrow-right.svg" alt="" class="carousel-control-next position-absolute"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            </div>
+
+            <ul class="d-flex list-group flex-row gap-4 mb-5">
+                <li class="list-group-item fw-semibold" id="all" data-filter="all">Semua</li>
+                <li class="list-group-item fw-semibold" id="makanan" data-filter="makanan">Makanan</li>
+                <li class="list-group-item fw-semibold" id="item" data-filter="item">per-item</li>
+                <li class="list-group-item fw-semibold" id="minuman" data-filter="minuman">Minuman</li>
+            </ul>
+
+            <div class="row position-relative temoekan-content-container overflow-y-scroll">
+                <div class="col col-4 pe-3 position-sticky top-0">
+                    <!-- carousel -->
+                    <div id="carouselExampleDark" class="carousel slide position-relative">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="asset/img/menu/slider1.png" alt="" class="img-fluid mb-4">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="asset/img/menu/slider2.png" alt="" class="img-fluid mb-4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="asset/img/menu/slider3.png" alt="" class="img-fluid mb-4">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel end -->
+                    <!-- <img src="asset/img/menu/menu-slider.png" alt="" class="img-fluid mb-4"> -->
+                    <a href=""
+                        class="fw-semibold fs-5 btn-lihat w-100 text-dark text-center p-3 d-block rounded-4 text-decoration-none">
+                        Lihat Menoe
+                    </a>
+                </div>
+                <div class="col col-8 position-absolute end-0">
+                    <div class="row row-cols-2 tmc-container">
+                        <!-- menu card -->
+
+                        <!-- makanan -->
+                        <div class="col makanan element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu1.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Campur
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Pentol 4, Tahu 1, Goreng 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            22K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col makanan element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu2.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Pentol Tahu
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Pentol 5, Tahu 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            23K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col makanan element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu3.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Pentol Pangsit
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Pentol 5, Pangsit Goreng 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            23K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col makanan element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Pentol
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Pentol 6
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            24K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- makanan end -->
+
+                        <!-- per item -->
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu1.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Halus
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Bakso Halus 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            4K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu2.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Kasar
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Bakso Kasar 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            4K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu3.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Bakso Goreng
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Bakso Goreng 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            4K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Goreng Pangsit
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Goreng Pangsit 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            3K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Tahu
+                                        </p>
+                                        <p class="tmc-sub">
+                                            tahu 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            3K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col item element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            lontong
+                                        </p>
+                                        <p class="tmc-sub">
+                                            lontong 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            2K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- per item end -->
+
+                        <!-- Minuman -->
+                        <div class="col minuman element element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu2.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Teh Botol Sosro
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Teh Botol Sosro 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            5K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col minuman element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu3.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Es Jeruk
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Es Jeruk 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            5K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col minuman element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Jeruk Panas
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Jeruk Panas 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            5K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col minuman element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Es Teh
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Es Teh 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            4K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col minuman element">
+                            <div class="temoekan-menu-card">
+                                <img src="asset/img/menu/menu4.png" alt="" class="mb-3 w-100">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <p class="fw-semibold fs-4 m-0">
+                                            Teh Panas
+                                        </p>
+                                        <p class="tmc-sub">
+                                            Teh Panas 1
+                                        </p>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            3K
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Minuman end -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators position-absolute">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+    <!-- temoekan end -->
+
+    <!-- .divider -->
+    <div class="divider container-fluid py-5"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- filtering -->
+    <script>
+        $(document).ready(function () {
+            // Fungsi untuk mengubah elemen berdasarkan jenis yang dipilih
+            function filterElements(type) {
+                $('.list-group-item').removeClass('list-active');
+                $('#' + type).addClass('list-active');
+
+                if (type === 'all') {
+                    $('.element').show();
+                } else {
+                    $('.element').hide();
+                    $('.element.' + type).show();
+                }
+            }
+
+            // Inisialisasi: Tampilkan semua elemen
+            filterElements('all');
+
+            // Mengatur klik event pada tombol jenis elemen
+            $('.list-group-item').click(function () {
+                // Mengambil jenis elemen dari data-filter attribute
+                var type = $(this).data('filter');
+
+                // Memanggil fungsi untuk mengubah elemen berdasarkan jenis
+                filterElements(type);
+
+
+
+                // Animasi zoom pada elemen yang ditampilkan
+                $('.element:visible').addClass('zoomIn');
+
+                // Menghapus kelas zoomIn setelah animasi selesai
+                setTimeout(function () {
+                    $('.element:visible').removeClass('zoomIn');
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>
