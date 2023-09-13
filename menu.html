@@ -55,12 +55,13 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- temoekan -->
-    <div class="container my-5 py-4">
-        <h1 class="temoekan-title fw-semibold mb-5">
+    <!-- temoekan desktop-->
+    <div class="temoekan-container container my-5 py-4">
+        <h1 class="temoekan-title fw-semibold mb-5" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="0">
             Temoekan yang Kamu idamkan!
         </h1>
-        <div class="filter-grup-container position-relative">
+        <div class="filter-grup-container position-relative" data-aos="zoom-in" data-aos-duration="1500"
+            data-aos-delay="400">
 
             <div class="position-absolute arrow-container">
                 <img src="asset/img/index/arrow-left.svg" alt="" class="carousel-control-prev position-absolute"
@@ -424,10 +425,337 @@
             </div>
         </div>
     </div>
-    <!-- temoekan end -->
+    <!-- temoekan desktop end -->
 
     <!-- .divider -->
-    <div class="divider container-fluid py-5"></div>
+    <div class="divider container-fluid py-4"></div>
+    <!-- divider end -->
+
+    <!-- temoekan mobile and tablet -->
+    <div class="container temoekan-container-mobile d-none">
+        <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="0">
+            <h1 class="temoekan-title fw-semibold mb-5">
+                Temoekan yang Kamu idamkan!
+            </h1>
+            <!-- carousel -->
+            <div id="carouselMenuMobile" class="carousel slide position-relative mb-5">
+                <div class="position-absolute arrow-container">
+                    <img src="asset/img/index/arrow-left.svg" alt="" class="carousel-control-prev position-absolute"
+                        data-bs-target="#carouselMenuMobile" data-bs-slide="prev">
+                    <img src="asset/img/index/arrow-right.svg" alt="" class="carousel-control-next position-absolute"
+                        data-bs-target="#carouselMenuMobile" data-bs-slide="next">
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="asset/img/menu/menu-slider-wide.png" alt="" class="img-fluid mb-4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="asset/img/menu/menu-slider-wide.png" alt="" class="img-fluid mb-4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/img/menu/menu-slider-wide.png" alt="" class="img-fluid mb-4">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <!-- carousel end -->
+        </div>
+
+        <!-- makanan -->
+        <div class="makanan container my-3 pt-5">
+            <p class="fw-semibold fs-4 mb-3">
+                Makanan
+            </p>
+            <div class="row row-cols-1 row-cols-sm-2 px-2 g-4">
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title">
+                                Bakso Campur
+                            </p>
+                            <p class="fw-thin mb3 menumakan-sub">
+                                Pentol 4, Goreng 1, Tahu 1
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                22.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="200">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title">
+                                Bakso Pentol Tahu
+                            </p>
+                            <p class="fw-thin mb3 menumakan-sub">
+                                Pentol 5, Tahu 1
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                23.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="300">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title">
+                                Bakso Pentol Pangsit
+                            </p>
+                            <p class="fw-thin mb3 menumakan-sub">
+                                Pentol 4, Pangsit Goreng 1
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                23.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="400">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title">
+                                Bakso Pentol
+                            </p>
+                            <p class="fw-thin mb3 menumakan-sub">
+                                Pentol 6
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                24.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- makanan end -->
+
+        <!-- Per item -->
+        <div class="container my-3 pt-5">
+            <p class="fw-semibold fs-4 mb-3">
+                Per Item
+            </p>
+            <div class="row row-cols-1 row-cols-sm-2 px-2 g-4">
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3 mb-3">
+                                Bakso Halus
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                4.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="200">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Bakso kasar
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                4.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="300">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Bakso Goreng
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                4.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="400">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Goreng Pangsit
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                3.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="500">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Tahu
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                3.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="600">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Lontong
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                2.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Per item end -->
+
+        <!-- minuman -->
+        <div class="container my-3 pt-5">
+            <p class="fw-semibold fs-4 mb-3">
+                Minuman
+            </p>
+            <div class="row row-cols-1 row-cols-sm-2 px-2 g-4">
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3 mb-3">
+                                Teh Botol Sosro
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                5.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Es Jeruk
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                5.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Jeruk Panas
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                5.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Es Teh
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                4.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="menu-card-container rounded-2 p-3 row" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="col  col-7">
+                            <p class="fw-medium m-0 menumakan-title mb-3">
+                                Teh Panas
+                            </p>
+                            <p class="fs-5 menumakan-harga">
+                                3.000
+                            </p>
+                        </div>
+                        <div class="col col-5">
+                            <img src="asset/img/menu/menu1.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- minuman end -->
+
+        <!-- .divider -->
+        <div class="divider container-fluid py-4"></div>
+        <!-- divider end -->
+
+    </div>
+    <!-- temoekan mobile and tablet end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
