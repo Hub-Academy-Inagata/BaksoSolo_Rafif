@@ -458,13 +458,13 @@ h1, h1 span, b {
 
     /* hero */
     .hero-container {
-        margin-bottom: 10vh !important;
-        margin-top: 5vh !important;
+        margin-bottom: 8vh !important;
+        margin-top: 0vh !important;
     }
     .title {
         font-size: 28pt !important;
         margin-top: 3vh !important;
-        margin-bottom: 12vh !important;
+        margin-bottom: 10vh !important;
     }
     .bakso-hero {
         height: 150px !important;
@@ -473,21 +473,33 @@ h1, h1 span, b {
         border-radius: 15px !important;
     }
     .btn-group-hero {
-        bottom: 8% !important;
-        right: 3% !important;
+        display: none !important;
+    }
+    .btn-group-hero-mobile {
+        display: block !important;
+        padding: 0 8px !important;
     }
     .btn-gofood {
-        margin-bottom: 5px !important;
+        margin-bottom: 10px !important;
+        justify-content: center !important;
     }
-    .btn-gofood, .btn-wa {
-        padding: 5px 8px !important;
-        border-radius: 8px !important;
+    .btn-gofood div {
+        font-size: 18px !important;
+        margin-right: 15px !important;
     }
-    .btn-gofood div , .btn-wa div{
-        font-size: 8pt !important;
+    .btn-gofood img {
+        width: 40px !important;
     }
-    .btn-gofood img , .btn-wa img{
-        width: 25px !important;
+    .btn-wa {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        justify-content: center !important;
+    }
+    .btn-wa img {
+        margin-right: 10px !important;
+    }
+    .cita-rasa-container {
+        margin-bottom: 3vh !important;
     }
     .cita-rasa {
         width: 100% !important;
@@ -670,13 +682,15 @@ h1, h1 span, b {
     .hidangan-text {
         font-size: 28px !important;
         padding: 0px !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 30px !important;
     }
     .hidangan-btn-container {
         margin-bottom: 0px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
     #btn-gofood {
-        margin-bottom: 0px !important;
+        margin-right: 0px !important;
     }
     /* hidangan end */
 
