@@ -341,8 +341,12 @@ h1, h1 span, b {
     .didirikan-right, .didirikan-left {
         width: auto;
     }
+    .didirikan-left {
+        position: static !important;
+    }
     .container-didirikan-text {
-        position: relative !important;
+        position: static !important;
+        padding: 8rem 4rem !important;
     }
     .didirikan-img-big {
         display: none !important;
@@ -453,6 +457,10 @@ h1, h1 span, b {
     }
     .btn-pesan {
         font-size: 12px !important;
+        display: block !important;
+        width: 90% !important;
+        float: none !important;
+        margin: auto !important;
     }
     /* navbar end */
 
@@ -462,9 +470,10 @@ h1, h1 span, b {
         margin-top: 0vh !important;
     }
     .title {
-        font-size: 28pt !important;
+        font-size: 42pt !important;
         margin-top: 3vh !important;
         margin-bottom: 10vh !important;
+        line-height: 0.9 !important;
     }
     .bakso-hero {
         height: 150px !important;
@@ -503,10 +512,10 @@ h1, h1 span, b {
     }
     .cita-rasa {
         width: 100% !important;
-        padding: 18px 30px !important;
+        padding: 22px 30px !important;
     }
     .cita-rasa h1 {
-        font-size: 18px !important;
+        font-size: 22px !important;
         line-height: 25px !important;
         margin: 0 !important;
     }
@@ -516,13 +525,17 @@ h1, h1 span, b {
     /* hero end */
 
     /* didirikan */
+    .container-didirikan-text {
+        padding: 5rem 3rem !important;
+        width: 100% !important;
+    }
     .didirikan-img {
-        width: 40% !important;
-        margin-bottom: 3vh !important;
+        width: 50% !important;
+        margin-bottom: 6vh !important;
     }
     .didirikan-text {
-        font-size: 14px !important;
-        line-height: 20px !important;
+        font-size: 18px !important;
+        line-height: 22px !important;
     }
     /* didirikan end */
 
@@ -530,13 +543,19 @@ h1, h1 span, b {
     .makan1 {
         display: none !important;
     }
+    .makan1-small {
+        display: block !important;
+    }
     .makan-text-container {
-        width: 85% !important;
+        width: 90% !important;
         margin: auto !important;
-        margin-bottom: 0vh !important;
+        margin-bottom: 5   !importantvh !important;
     }
     .makan-title {
-        font-size: 28px !important;
+        font-size: 50px !important;
+        line-height: 1 !important;
+        font-family: 'vg-semibold' !important;
+        margin-bottom: 30px !important;
     }
     .makan-sub {
         font-size: 18px !important;
@@ -544,21 +563,27 @@ h1, h1 span, b {
     .makan2-container {
         padding-top: 0 !important;
         margin: 40px 0 !important;
-        flex-wrap: wrap !important;
+        flex-wrap: wrap-reverse !important;
         justify-content: center !important;
+        width: 100% !important;
     }
     .menoe-btn-container {
-        width: 75% !important;
+        width: 90% !important;
+        margin-bottom: 40px !important;
+        margin-top: 20px !important;
     }
     .menoe-btn {
         margin-top: 10px !important;
-        font-size: 16px !important;
+        font-size: 20px !important;
         padding: 15px 30px !important;
         width: 100% !important;
     }
+    .makan2, .makan1-small {
+        width: 90% !important;
+    }
     .makan3-container-right {
         flex-wrap: wrap-reverse !important;
-        width: 80% !important;
+        width: 90% !important;
         margin: auto !important;
         margin-bottom: 20px !important;
     }
@@ -579,9 +604,13 @@ h1, h1 span, b {
         font-size: 14px !important;
         line-height: 20px !important;
     }
+    .makan3-container {
+        flex-wrap: wrap !important;
+    }
     .makan3-container-left {
         width: 80% !important;
         margin: auto !important;
+        margin-bottom: 40px !important;
     }
     .accivement-img {
         width: 50px !important;
