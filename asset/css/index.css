@@ -688,6 +688,7 @@ h1, h1 span, b {
     .review-container {
         padding-top: 0px !important;
         padding-bottom: 30px !important;
+        margin-bottom: 0 !important;
     }
     .review-text-container {
         margin-bottom: 30px !important;
@@ -717,9 +718,11 @@ h1, h1 span, b {
 
     /* hidangan */
     .hidangan-container {
-        border-radius: 0 !important;
         padding-left: 4vw !important;
         padding-right: 4vw !important;
+        width: 90% !important;
+        margin: auto !important;
+        margin-bottom: 30px !important;
     }
     .hidangan-title {
         margin-top: 0px !important;
