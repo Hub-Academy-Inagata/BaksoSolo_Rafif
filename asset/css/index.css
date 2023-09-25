@@ -179,6 +179,7 @@ h1, h1 span, b {
 
 .cabang-card {
     background-color: white !important;
+    height: 100% !important;
 }
 @keyframes rotate-zoom { 
     0% { transform: rotate(0deg) scale(1.0)  translateY(0px); }
@@ -200,7 +201,13 @@ h1, h1 span, b {
 #c2:hover ~ #c3,#c2:hover {
     animation: geserKanan 500ms ease 1 forwards !important;
 }
-#c3:hover {
+#c4:hover {
+    animation: geserKanan 500ms ease 1 forwards !important;
+}
+#c2:hover ~ #c4{
+    animation: geserKanan 500ms ease 1 forwards !important;
+}
+#c3:hover ~ #c4,#c3:hover {
     animation: geserKanan 500ms ease 1 forwards !important;
 }
 .btn-lokasi {
@@ -395,7 +402,7 @@ h1, h1 span, b {
     .cabang-title {
         width: 75% !important;
     }
-    #c3 {
+    #c3, #c4 {
         margin-top: 30px !important;
     }
     #c1:hover ~ #c3 {
@@ -404,6 +411,13 @@ h1, h1 span, b {
     #c2:hover ~ #c3 {
         transform: translateY(40px) !important;
         animation-name: none !important;
+    }
+    #c2:hover ~ #c4 {
+        transform: translateY(40px) !important;
+        animation-name: none !important;
+    }
+    #c2:hover ~ #c4{
+        animation: none !important;
     }
     /* cabang end */
 
@@ -653,6 +667,10 @@ h1, h1 span, b {
         margin-top: 30px !important;
     }
     #c1:hover ~ #c3, #c1:hover ~ #c2 {
+        transform: translateY(40px) !important;
+    }
+    #c3:hover ~ #c4 {
+        animation: none !important;
         transform: translateY(40px) !important;
     }
     /* cabang end */
