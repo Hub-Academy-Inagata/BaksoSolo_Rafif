@@ -13,6 +13,8 @@
     <link rel="icon" href="asset/img/index/logo-bakso.png">
     <!-- animation on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swipper css -->
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -55,15 +57,17 @@
 
     <!-- hero -->
     <div class="container hero-container">
-        <div class="container-fluid m-0 p-0 position-relative">
-            <h1 class="title w-100 text-center fw-bold mb-5 position-relative">
-                <span class="sub-title">
-                    Best Quality
-                </span> for Best Customer
-            </h1>
-            <div class="bakso-hero position-relative rounded-5 mb-4">
-                <img src="asset/img/index/bakso-hero1.png" alt="" class="position-absolute w-100 bakso-hero-img">
-                <div class="position-absolute btn-group-hero ">
+        <h1 class="title w-100 text-center fw-bold mb-5 position-relative">
+            <span class="sub-title">
+                Best Quality
+            </span> for Best Customer
+        </h1>
+        <div class="hero-content-container d-flex gap-2 gap-sm-4 h-100 pb-0 pb-sm-4">
+            <div class="cita-rasa rounded-4 p-5">
+                <h1 class="fw-bold mt-3">
+                    KUALITAS TERBAIK <br> UNTUK CITA RASA <br> YANG AUTHENTIC
+                </h1>
+                <div class="btn-group-hero mt-3 mt-sm-5">
                     <a href="https://gofood.link/u/bwl3PM" target="_blank"
                         class="d-flex btn-gofood rounded-4 align-items-center py-2 px-4 mb-3 text-black text-decoration-none  justify-content-center">
                         <div class="me-2 fw-semibold m-0 fs-5">ORDER SEKARANG</div>
@@ -77,37 +81,13 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="row mb-5 cita-rasa-container">
-            <div class="col col-lg-8 col-sm-12 col-12">
-                <div class="cita-rasa rounded-4 p-5 position-relative">
-                    <h1 class="fw-bold">
-                        KUALITAS TERBAIK <br> UNTUK CITA RASA <br> YANG AUTHENTIC
-                        <!-- CITA RASA ASLI <br> MALANGAN JANG <br> MELEGENDA SEDJAK -->
-                    </h1>
-                    <!-- <img src="asset/img/index/1965.svg" alt="" class="position-absolute hero-1965"> -->
-                </div>
+            <div class="bakso-hero rounded-4 d-flex justify-content-center">
+                <img src="asset/img/index/bakso-hero1.png" alt="" class="img-fluid bakso-hero-img">
             </div>
-            <div class="col col-4">
-                <div class="cita-rasa-black rounded-4">
-
-                </div>
-            </div>
-        </div>
-        <div class="d-none btn-group-hero-mobile">
-            <a href="https://gofood.link/u/bwl3PM" target="_blank"
-                class="d-flex btn-gofood rounded-4 align-items-center py-2 px-4 mb-3 text-black text-decoration-none  justify-content-center">
-                <div class="me-2 fw-semibold fs-5">ORDER SEKARANG</div>
-                <img src="asset/img/index/icon-gofood.svg" alt="" width="50px">
-            </a>
-            <a href="https://wa.link/tmrwvx" target="_blank"
-                class=" d-flex btn-wa rounded-4 py-3 px-4 align-items-center text-black text-decoration-none justify-content-center">
-                <img src="asset/img/index/icon-wa.svg" alt="" width="35px">
-                <div class="fw-semibold fs-4 ms-2">WhatsApp</div>
-            </a>
         </div>
     </div>
     <!-- hero end -->
+
 
     <!-- didirikan -->
     <div class="container-fluid didirikan-container p-0" id="tentang">
@@ -194,6 +174,110 @@
             <h1 class="cabang-title w-50 mb-5 fw-semibold">
                 Mendjadi pilihan bagi setiap lapisan keloearga
             </h1>
+
+            <!-- <section class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="card__container swiper">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Kell Dawx</h3>
+                                    <p class="card__description">
+                                        Passionate about development and design,
+                                        I carry out projects at the request of users.
+                                    </p>
+
+                                    <a href="#" class="card__button">View More</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/avatar-2.png" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Lotw Fox</h3>
+                                    <p class="card__description">
+                                        Passionate about development and design,
+                                        I carry out projects at the request of users.
+                                    </p>
+
+                                    <a href="#" class="card__button">View More</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/avatar-3.png" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Sara Mit</h3>
+                                    <p class="card__description">
+                                        Passionate about development and design,
+                                        I carry out projects at the request of users.
+                                    </p>
+
+                                    <a href="#" class="card__button">View More</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/avatar-4.png" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Jenny Wert</h3>
+                                    <p class="card__description">
+                                        Passionate about development and design,
+                                        I carry out projects at the request of users.
+                                    </p>
+
+                                    <a href="#" class="card__button">View More</a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="assets/img/avatar-5.png" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+
+                                <div class="card__data">
+                                    <h3 class="card__name">Lexa Kin</h3>
+                                    <p class="card__description">
+                                        Passionate about development and design,
+                                        I carry out projects at the request of users.
+                                    </p>
+
+                                    <a href="#" class="card__button">View More</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section> -->
+
             <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center position-relative"
                 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200">
                 <div class="col" id="c1">
@@ -484,6 +568,36 @@
             document.getElementById('video').setAttribute('src', videoSrc)
         })
     </script>
+    <!-- swiper -->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+    <script>
+        let swiperCards = new Swiper(".card__content", {
+            loop: true,
+            spaceBetween: 32,
+            grabCursor: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                968: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
 </body>
 
 </html>

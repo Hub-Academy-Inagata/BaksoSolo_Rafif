@@ -60,12 +60,11 @@ h1, h1 span, b {
 }
 .bakso-hero {
     background-color: #F06100 !important;
-    height: 473px !important;
-    margin-top: 16vh !important;
     z-index: 0 !important;
 }
 .bakso-hero-img {
     bottom: 0 !important;
+    width: 90% !important;
 }
 .btn-group-hero {
     bottom: 13% !important;
@@ -91,10 +90,11 @@ h1, h1 span, b {
 .cita-rasa {
     background-color: #FEBE33 !important;
     height: 100% !important;
+    width: 60% !important;
 }
 .cita-rasa h1 {
-    font-size: 50px !important;
-    line-height: 66px !important;
+    font-size: 28px !important;
+    line-height: 30px !important;
 }
 .hero-1965 {
     top: 6% !important;
@@ -173,6 +173,112 @@ h1, h1 span, b {
 /* makan-end */
 
 /* cabang */
+
+/* swipper */
+.card__container {
+    padding-block: 5rem;
+  }
+  
+  .card__content {
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .card__article {
+    width: 300px; /* Remove after adding swiper js */
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .card__image {
+    position: relative;
+    background-color: var(--first-color-light);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+  }
+  
+  .card__data {
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .card__img {
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .card__shadow {
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color-alt);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+  }
+  
+  .card__name {
+    font-size: var(--h2-font-size);
+    color: var(--second-color);
+    margin-bottom: .75rem;
+  }
+  
+  .card__description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+  }
+  
+  .card__button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: var(--dark-color);
+    font-weight: 600;
+  }
+  
+  /* Swiper class */
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    content: "";
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: var(--second-color);
+    display: none;
+  }
+  
+  .swiper-button-prev {
+    left: 0;
+  }
+  
+  .swiper-button-next {
+    right: 0;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--second-color);
+  }
+/* swipper end */
 .cabang-container {
     background-color: #FEBE33 !important;
 }
@@ -483,6 +589,9 @@ h1, h1 span, b {
         margin-bottom: 8vh !important;
         margin-top: 0vh !important;
     }
+    .hero-content-container {
+        flex-direction: column-reverse !important;
+    }
     .title {
         font-size: 40pt !important;
         margin-top: 3vh !important;
@@ -495,8 +604,11 @@ h1, h1 span, b {
         margin-bottom: 1vh !important;
         border-radius: 15px !important;
     }
+    .bakso-hero-img {
+        width: 70% !important;
+    }
     .btn-group-hero {
-        display: none !important;
+        /* display: none !important; */
     }
     .btn-group-hero-mobile {
         display: block !important;
