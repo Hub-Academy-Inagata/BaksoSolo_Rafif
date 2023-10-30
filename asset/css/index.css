@@ -372,8 +372,8 @@ h1, h1 span, b {
     max-width: auto !important;
 }
 .review-text {
-    font-size: 49px !important;
-    line-height: 64px !important;
+    font-size: 32px !important;
+    line-height: 50px !important;
 }
 .profile-container {
     bottom: 0 !important;
@@ -545,8 +545,8 @@ h1, h1 span, b {
 
     /* review */ 
     .review-text {
-        font-size: 38px !important;
-        line-height: 48px !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
     }
     /* review end */
 
@@ -815,8 +815,8 @@ h1, h1 span, b {
         height: 250px !important;
     }
     .review-text {
-        font-size: 18px !important;
-        line-height: 25px !important;
+        font-size: 15px !important;
+        line-height: 18px !important;
     }
     .profile-img {
         width: 50px !important;
