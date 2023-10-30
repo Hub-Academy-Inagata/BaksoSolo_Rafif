@@ -434,6 +434,12 @@ h1, h1 span, b {
     /* navbar end */
 
     /* hero */
+    .hero-content-container {
+        flex-direction: column-reverse !important;
+    }
+    .cita-rasa {
+        width: 100% !important;
+    }
     .title {
         font-size: 58pt !important;
     }
@@ -591,9 +597,6 @@ h1, h1 span, b {
     .hero-container {
         margin-bottom: 8vh !important;
         margin-top: 0vh !important;
-    }
-    .hero-content-container {
-        flex-direction: column-reverse !important;
     }
     .title {
         font-size: 40pt !important;
