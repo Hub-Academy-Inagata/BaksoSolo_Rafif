@@ -339,8 +339,8 @@ h1, h1 span, b {
 }
 /* cabang end */
 
-/* galeri */
-.galeri-container {
+/* event */
+.event-container {
     background-color: #111111 !important;
 }
 @keyframes zoomOut { 
@@ -370,13 +370,13 @@ h1, h1 span, b {
     background-color: #FF6913 !important;
     z-index: 1 !important;
 }
-.galeri-title {
+.event-title {
     font-size: 50px !important;
     line-height: 1 !important;
     font-family: 'vg-semibold' !important;
     margin-bottom: 30px !important;
 }
-/* galeri end */
+/* event end */
 
 /* review */ 
 .review-container {
@@ -551,7 +551,7 @@ h1, h1 span, b {
     }
     /* cabang end */
 
-    /* galeri */
+    /* event */
     #video-btn:hover {
         animation: zoomOut 500ms ease 1 forwards !important;
         cursor: pointer;
@@ -559,13 +559,13 @@ h1, h1 span, b {
     .list-ketentuan li {
         font-size: 22px !important;
     }
-    .galeri-title {
+    .event-title {
         font-size: 36px !important;
     }
-    .galeri-sub {
+    .event-sub {
         font-size: 24px !important;
     }
-    /* galeri end */
+    /* event end */
 
     /* review */ 
     .review-text {
@@ -817,7 +817,7 @@ h1, h1 span, b {
     }
     /* cabang end */
 
-    /* galeri */
+    /* event */
     #video-btn {
         width: 50px !important;
     }
@@ -825,13 +825,13 @@ h1, h1 span, b {
         font-size: 16px !important;
         letter-spacing: 1px !important;
     }
-    .galeri-title {
+    .event-title {
         font-size: 36px !important;
     }
-    .galeri-sub {
+    .event-sub {
         font-size: 18px !important;
     }
-    /* galeri end */
+    /* event end */
 
     /* review */ 
     .review-container {
