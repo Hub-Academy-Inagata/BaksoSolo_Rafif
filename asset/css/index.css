@@ -61,12 +61,6 @@ h1, h1 span, b {
 .sub-title {
     color: #F06100 !important;
 }
-.bakso-hero.carousel-item:hover img {
-    transform: scale(1.1) !important;
-}
-.bakso-hero.carousel-item img {
-    transition: 400ms;
-}
 .carousel-hero-prev.carousel-control-prev {
     left: 0px !important;
     border: none !important;
