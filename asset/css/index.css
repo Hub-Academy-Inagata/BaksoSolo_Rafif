@@ -23,9 +23,15 @@
 * {
     font-family: 'vg' !important;
 }
+body {
+    background-color: #F2F2F2 !important;
+}
 h1, h1 span, b {
     font-family: 'vg-bold' !important;
     font-weight: bold !important;
+}
+.fw-normal {
+    font-family: 'vg' !important;
 }
 .fw-thin {
     font-family: 'vg-thin' !important;

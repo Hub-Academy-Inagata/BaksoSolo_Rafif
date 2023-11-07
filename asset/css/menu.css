@@ -1,3 +1,4 @@
+
 /* temoekan */
 .arrow-container {
     top: 8vh !important;
@@ -40,7 +41,7 @@
 }
 @keyframes menuHover { 
     0% { transform: scale(1); }
-    100% { transform: scale(0.9); }
+    100% { transform: scale(0.96); }
 }
 .temoekan-menu-card:hover {
     animation: menuHover 500ms ease 1 forwards !important;
@@ -49,9 +50,24 @@
     text-decoration: none !important;
     color: black !important;
 }
+.content-frozen {
+    transform: scale(0.9);
+}
 .pesan-frozen {
     height: 100% !important;
     width: 100% !important;
+    content: "";
+}
+.pesan-btn-frozen {
+    background-color: #25D366 !important;
+    letter-spacing: 2px !important;
+    
+}
+.harga-frozen {
+    font-size: 56px !important;
+}
+.info-frozen {
+    background-color: #F2F2F2 !important;
 }
 .temoekan-menu-card:hover .pesan-frozen {
     display: flex !important;
