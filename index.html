@@ -63,7 +63,7 @@
             </span> for Best Customer
         </h1>
         <div class="hero-content-container d-flex gap-2 gap-sm-4 pb-0 pb-sm-4">
-            <div class="cita-rasa rounded-4 p-5 ">
+            <div class="cita-rasa rounded-4 p-5 d-flex flex-column">
                 <h1 class="fw-bold mt-3 mb-sm-3">
                     KUALITAS TERBAIK <br> UNTUK CITA RASA <br> YANG AUTHENTIC
                 </h1>
@@ -81,10 +81,30 @@
                     </a>
                 </div>
             </div>
-            <div class="bakso-hero rounded-4 d-flex justify-content-center">
-                <div class="">
-                    <img src="asset/img/index/bakso-hero1.png" alt="" class="w-100">
+            <div class="bakso-hero rounded-4 w-100 position-relative overflow-hidden">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <a href="menu.html" class="carousel-item active bakso-hero">
+                            <img src="asset/img/index/hero/hero1.png" class="d-block img-fluid" alt="...">
+                        </a>
+                        <a href="#galeri" class="carousel-item bakso-hero">
+                            <img src="asset/img/index/hero/hero2.png" class="d-block img-fluid" alt="...">
+                        </a>
+                        <a href="" class="carousel-item bakso-hero">
+                            <img src="asset/img/index/hero/hero3.png" class="d-block img-fluid" alt="...">
+                        </a>
+                    </div>
                 </div>
+                <button class="carousel-control-prev carousel-hero-prev position-absolute bg-dark" type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-hero-next position-absolute" type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </div>
@@ -374,6 +394,40 @@
     <!-- galeri -->
     <div class="container-fluid py-5 galeri-container" id="galeri">
         <div class="container py-5">
+            <h1 class="text-white galeri-title mb-5">
+                BAKSO SOLO KIDUL PASAR for EVENT
+            </h1>
+            <h1 class="text-white mb-4 galeri-sub">
+                SYARAT DAN KETENTUAN
+            </h1>
+            <ol class="text-white fs-3 mb-5 list-ketentuan">
+                <li class="my-3">
+                    Bakso Solo Kidul Pasar menerima pesanan dalam segala acara atau event seperti pernikahan, ulang
+                    tahun, dan event-event lainnya.
+                </li>
+                <li class="my-3">
+                    Pihak konsumen diperbolehkan untuk memesan Bakso Solo Kidul Pasar sesuai Request dan kebutuhan
+                    konsumen
+                </li>
+                <li class="my-3">
+                    Jika pesanan diatas nominal 2 juta dari pihak konsumen maka akan GRATIS Pramusaji, Ongkos Kirim dan
+                    alat-alat pendukung (Dandang, Peralatan makan, hingga kompor)
+                </li>
+                <li class="my-3">
+                    Jika pesanan dibawah Nominal 2 juta ada fee untuk pramusaji dan ongkos kirim sebesa 150 ribu.
+                </li>
+                <li class="my-3">
+                    Informasi lebih lanjut dan Pemesanan dapat menghubungi admin
+                    <a href="https://api.whatsapp.com/send?phone=6281292272007&text=Halo%20Bakso%20Solo%20Kidul%20Pasar%0ABisakah%20saya%20dibantu%20untuk%20event%3F"
+                        class="text-decoration-none" target="_blank">
+                        081292272007
+                    </a> atau
+                    <a href="https://api.whatsapp.com/send?phone=6281232427777&text=Halo%20Bakso%20Solo%20Kidul%20Pasar%0ABisakah%20saya%20dibantu%20untuk%20event%3F"
+                        class="text-decoration-none" target="_blank">
+                        081232427777
+                    </a>
+                </li>
+            </ol>
             <div class="position-relative mb-5">
                 <img src="asset/img/index/video-circle.svg" alt="" class="position-absolute startvid-btn" id="video-btn"
                     data-bs-toggle="modal" data-bs-target="#modalvideo"
@@ -381,19 +435,16 @@
                 <img src="asset/img/index/video-img1.png" alt="" class="w-100" id="video-img">
             </div>
             <div class="row row-cols-1 row-cols-sm-2 gx-5">
-                <div class="col">
-                    <p class="fs-2 text-white mb-5 galeri-title">
-                        Potret tjerita rasa masa laloe jang tak pernah lekang oleh waktoe
-                    </p>
-                    <img src="asset/img/index/galeri1.png" alt="" class="w-100 mb-5" data-aos="zoom-in"
+                <div class="col mb-3 mb-md-0">
+                    <img src="asset/img/index/galeri/galeri1.png" alt="" class="w-100 mb-5" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="100">
-                    <img src="asset/img/index/galeri2.png" alt="" class="w-100 mb-3" data-aos="zoom-in"
+                    <img src="asset/img/index/galeri/galeri2.png" alt="" class="w-100 mb-3" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="300">
                 </div>
                 <div class="col">
-                    <img src="asset/img/index/galeri3.png" alt="" class="w-100 mb-5" data-aos="zoom-in"
+                    <img src="asset/img/index/galeri/galeri4.png" alt="" class="w-100 mb-5" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="200">
-                    <img src="asset/img/index/galeri4.png" alt="" class="w-100 mb-3" data-aos="zoom-in"
+                    <img src="asset/img/index/galeri/galeri3.png" alt="" class="w-100 mb-3" data-aos="zoom-in"
                         data-aos-duration="1000" data-aos-delay="400">
                 </div>
             </div>
