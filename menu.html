@@ -74,6 +74,7 @@
                 <li class="list-group-item fw-semibold" id="all" data-filter="all">Semua</li>
                 <li class="list-group-item fw-semibold" id="makanan" data-filter="makanan">Makanan</li>
                 <li class="list-group-item fw-semibold" id="item" data-filter="item">per-item</li>
+                <li class="list-group-item fw-semibold" id="frozen" data-filter="frozen">Frozen</li>
             </ul>
 
             <div class="row position-relative temoekan-content-container overflow-y-scroll">
@@ -308,6 +309,31 @@
                             </div>
                         </div>
                         <!-- per item end -->
+
+                        <!-- Frozen -->
+                        <div class="col col-12 item frozen">
+                            <a href="" class="temoekan-menu-card d-flex position-relative">
+                                <div
+                                    class="pesan-frozen d-none position-absolute bg-secondary-subtle rounded-4 opacity-50 d-flex align-items-center justify-content-center">
+                                    <h2 class="fw-bold text-white p-3 rounded-3 bg-secondary">
+                                        Hubungi Admin
+                                    </h2>
+                                </div>
+                                <div class="w-50 p-3">
+                                    <img src="asset/img/menu/lontong.png" alt="" class="w-100">
+                                </div>
+                                <div class="p-3 ps-4 w-50">
+                                    <h3 class="fw-bold">
+                                        Paket Frozen 200k
+                                    </h3>
+                                    <div class="d-inline-block">
+                                        <p class="harga fs-5 fw-bold py-2 px-3 rounded-3 text-white">
+                                            Rp.200.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -590,7 +616,7 @@
             }
 
             // Inisialisasi: Tampilkan semua elemen
-            filterElements('all');
+            filterElements('frozen');
 
             // Mengatur klik event pada tombol jenis elemen
             $('.list-group-item').click(function () {

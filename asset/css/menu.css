@@ -45,6 +45,17 @@
 .temoekan-menu-card:hover {
     animation: menuHover 500ms ease 1 forwards !important;
 }
+.temoekan-menu-card {
+    text-decoration: none !important;
+    color: black !important;
+}
+.pesan-frozen {
+    height: 100% !important;
+    width: 100% !important;
+}
+.temoekan-menu-card:hover .pesan-frozen {
+    display: flex !important;
+}
 @keyframes zoomIn { 
     0% {transform: scale(.1);} 
     100% {transform: none;}
