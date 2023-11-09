@@ -71,7 +71,7 @@ h1, h1 span, b {
     color: #F06100 !important;
 }
 .carousel-hero-prev.carousel-control-prev {
-    left: 0px !important;
+    left: 1% !important;
     border: none !important;
     background: none !important;
     height: 100% !important;
@@ -80,6 +80,10 @@ h1, h1 span, b {
     border: none !important;
     background: none !important;
     height: 100% !important;
+    right: 1% !important;
+}
+.carousel-hero-prev.carousel-control-prev:hover, .carousel-hero-next.carousel-control-next:hover {
+    border: none !important;
 }
 .btn-group-hero {
     bottom: 13% !important;
