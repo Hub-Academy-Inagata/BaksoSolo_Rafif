@@ -35,6 +35,21 @@
     margin-right: 1px !important;
     cursor: pointer !important;
 }
+.list-group-item-small {
+    border: 1px solid black !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    padding: 8px 12px 8px 12px !important;
+    white-space: nowrap;
+}
+.list-group-item-small:hover, .list-active-small{
+    font-family: 'vg' !important;
+    background-color: #F06100 !important;
+    color: white !important;
+    border: 1px solid #F06100 !important;
+    margin-right: 1px !important;
+    cursor: pointer !important;
+}
 .btn-lihat {
     background-color: #FEBE33 !important;
     animation: triggerClick 1.5s ease-in-out infinite alternate-reverse both !important;
@@ -60,8 +75,6 @@
 }
 .pesan-btn-frozen {
     background-color: #25D366 !important;
-    letter-spacing: 2px !important;
-    
 }
 .harga-frozen {
     font-size: 56px !important;
@@ -157,8 +170,9 @@
     .menumakan-harga {
         font-size: 1em !important;
         font-family: 'vg-medium' !important;
-
+        color: #F06100 !important;
     }
+
 }
 
 /* ========= tablet end ===== */
