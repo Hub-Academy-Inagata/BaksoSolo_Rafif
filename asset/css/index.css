@@ -53,6 +53,9 @@ h1, h1 span, b {
 
 
 /* navbar */
+.nav-logo {
+    width: 100px !important;
+}
 .btn-pesan {
     padding: 12px 20px !important;
 }
@@ -630,6 +633,12 @@ h1, h1 span, b {
         margin-bottom: 20px !important;
     }
     /* hidangan end */
+
+    /* footer */
+    .footer-logo {
+        width: 70px !important;
+    }
+    /* footer end */
 }
 
 /* ========= tablet end ===== */
@@ -639,7 +648,7 @@ h1, h1 span, b {
 @media screen and (max-width: 500px) {
     /* navbar */
     .nav-logo {
-        width: 60% !important;
+        width: 60px !important;
     }
     .nav-item {
         padding-left: 20px !important;
